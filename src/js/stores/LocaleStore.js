@@ -15,7 +15,6 @@ var langLocaleMap = {
   ja: 'ja',
   ko: 'ko',
   es: 'es_AR',
-  "es-ES": 'es_ES',
   fr: 'fr_FR',
   de: 'de_DE',
   pt: 'pt_BR',
@@ -26,7 +25,8 @@ var langLocaleMap = {
 var headerLocaleMap = {
   'zh-CN': 'zh_CN',
   'zh-TW': 'zh_TW',
-  'pt-BR': 'pt_BR'
+  'pt-BR': 'pt_BR',
+  'es-ES': 'es_ES'
 };
 
 var supportedLocalesList = Object.values(langLocaleMap)
