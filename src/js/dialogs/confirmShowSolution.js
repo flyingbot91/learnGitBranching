@@ -124,6 +124,26 @@ exports.dialog = {
         'Я вірю в тебе! Ти впораєшся!'
       ]
     }
+  }],
+  'vi': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Bạn chắc là muốn xem đáp án chứ?',
+        '',
+        'Tôi tin ở bạn! Bạn có thể làm được!'
+      ]
+    }
+  }],
+  'sl_SI': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Si prepričan, da hočeš videti rešitev?',
+        '',
+        'Verjamem vate! Maš ti to! Ali pač ne?'
+      ]
+    }
   }]
 };
 

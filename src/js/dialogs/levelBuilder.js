@@ -26,13 +26,13 @@ exports.dialog = {
         '',
         'So funktioniert\'s:',
         '',
-        '  * Stelle mit Git-Befehlen die Ausganssituation her',
+        '  * Stelle mit Git-Befehlen die Ausgangssituation her',
         '  * Leg den Startpunkt mit ```define start``` fest',
         '  * Gib eine Abfolge von Git-Befehlen ein, welche die (optimale) Lösung darstellen',
         '  * Leg den Ziel-Baum mit ```define goal``` fest. Damit markierst du den Endpunkt der Lösung',
         '  * Gib einen Hinweis mittels ```define hint``` an, wenn du willst',
         '  * Änder den Namen mittels ```define name```',
-        '  * Wenn du magst, erstelle einen schönene Einführungsdialog mit ```edit dialog```',
+        '  * Wenn du magst, erstelle einen schönen Einführungsdialog mit ```edit dialog```',
         '  * Gib das Kommando ```finish``` ein um deinen Level als JSON auszugeben'
       ]
     }
@@ -245,6 +245,44 @@ exports.dialog = {
         '  * 문제의 이름을 ```define name```로 수정하세요',
         '  * 시작 글이 필요하다면 ```edit dialog```로 쓸 수 있습니다',
         '  * ```finish```로 여러분의 레벨을 JSON결과로 받을 수 있습니다!'
+      ]
+    }
+  }],
+  'vi': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Chào mừng đến trình tạo cấp độ!',
+        '',
+        'Có những bước chính sau:',
+        '',
+        '  * Khởi tạo môi trường với các lệnh git',
+        '  * Định nghĩa cây để bắt đầu với ```define start```',
+        '  * Nhập chuỗi lệnh git để tạo đáp án (tốt nhất) của bạn',
+        '  * Định nghĩa cây mục tiêu với ```define goal```. Định nghĩa mục tiêu đồng thời cũng xác định đáp án',
+        '  * Có thể định nghĩa gợi ý với ```define hint```',
+        '  * Chỉnh sửa tên với ```define name```',
+        '  * Có thể định nghĩa hội thoại bắt đầu với ```edit dialog```',
+        '  * Nhập lệnh ```finish``` xuất cấp độ của bạn dưới dạng JSON!'
+      ]
+    }
+  }],
+  'sl_SI': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Dobrodošel v graditelju stopenj!',
+        '',
+        'Tu so glavni koraki:',
+        '',
+        '  * Postavi začetno stanje z git ukazi',
+        '  * Določi začetno drevo z ```define start```',
+        '  * Vnesi zaporedje ukazov, ki predstavljajo (najboljšo) rešitev',
+        '  * Določi ciljno drevo z ```define goal```. Določanje cilja določi tudi rešitev',
+        '  * Opcijsko določi namig z ```define hint```',
+        '  * Uredi ime z ```define name```',
+        '  * Opcijsko določi ličen začetni dialog z ```edit dialog```',
+        '  * Vnesi ukaz ```finish``` za ustvarjanje JSON različice tvoje stopnje!'
       ]
     }
   }],

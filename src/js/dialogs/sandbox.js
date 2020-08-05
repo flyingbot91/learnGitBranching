@@ -613,5 +613,50 @@ exports.dialog = {
         '[це спеціальне посилання.](https://pcottle.github.io/learnGitBranching/?NODEMO)'
       ]
     }
-  }]
+  }],
+  'vi': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Chào mừng đến với Học Nhánh Git',
+        '',
+        'Bạn có hứng thú học Git? Bạn đến đúng nơi rồi đấy! ',
+        '"Học Nhánh Git" là cách trực quan và hiệu quả nhất để học Git trên web; ',
+        'thông qua một loạt các thử thách cấp độ thú vị, bạn sẽ từng bước tìm hiểu sức mạnh của git',
+        '',
+        'Sau khi hội thoại này đóng lại, bạn sẽ thấy nhiều cấp độ mà chúng tôi cung cấp. ',
+        'Nếu bạn là người mới thì hãy bắt đầu từ bài đầu tiên. Nếu bạn đã có hiểu biết cơ bản về git, ',
+        'hãy thử những bài mang tính thách thức hơn phía sau.',
+        '',
+        'Bạn có thể dùng lệnh `show commands` để xem tất cả các lệnh hiện hữu.',
+        '',
+        'Ghi chú: Nếu muốn trực tiếp vào hộp cát ở lần sau?',
+        'Hãy dùng',
+        '[đường link đặc biệt này của chúng tôi](https://pcottle.github.io/learnGitBranching/?NODEMO)'
+      ]
+    }
+  }],
+  'sl_SI': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Dobrodošel na učenju Git Branchanja',
+        '',
+        'Bi se rad naučil Git? No, prišel si na pravo mesto! ',
+        '"Learn Git Branching" je najbolj vizualen in interaktiven način učenja Git-a ',
+        'na spletu; zagrizel boš v zanimive stopnje, po korakih boš spoznaval osupljive ',
+        'funkcije in kaj pa veš, morda ti bo celo zabavno. ;)',
+        '',
+        'Za tem oknom boš videl kopico stopenj, ki so na razpolago. Če si ',
+        'začetnik, kar pogumno, začni s prvo. Če pa že poznaš Git osnove, ',
+        'se preizkusi v zahtevnejših stopnjah.',
+        '',
+        'Vidiš lahko vse ukaze, ki so na voljo, z ukazom `show commands` v terminalu.',
+        '',
+        'PS: Bi šel rad naslednjič naravnost v peskovnik?',
+        'Poizkusi s',
+        '[to posebno povezavo](https://pcottle.github.io/learnGitBranching/?NODEMO)'
+      ]
+    }
+  }],
 };

@@ -15,7 +15,9 @@ exports.level = {
     "ja"   : "このレベルをクリアするには少なくとも一つの直接リファレンス（hash）を使用する必要があります",
     "ru_RU": "Понадобится использовать как минимум одну прямую ссылку (хеш), чтобы пройти этот уровень",
     "ko"   : "이번 레벨을 완료하려면 최소 한번은 직접 참조(해시)를 사용해야 합니다.",
-    "uk": "Тобі потрібно використати як мінімум одне пряме посилання (хеш) щоб пройти цей рівень"
+    "uk": "Тобі потрібно використати як мінімум одне пряме посилання (хеш) щоб пройти цей рівень",
+    "vi": "Bạn sẽ cần dùng ít nhất một tham chiếu trực tiếp (mã băm) để hoàn thành cấp độ này",
+    "sl_SI": "Moral boš uporabiti vsaj eno direktno referenco (hash) za dokončanje te stopnje."
   },
   "name": {
     "en_US": "Relative Refs #2 (~)",
@@ -30,7 +32,9 @@ exports.level = {
     "zh_TW": "相對引用二（~）",
     "ru_RU": 'Относительные ссылки №2',
     "ko"   : "상대 참조 #2 (~)",
-    "uk": "Відносні посилання №2"
+    "uk": "Відносні посилання №2",
+    "vi": "Tham chiếu tương đối #2 (~)",
+    "sl_SI": "Relativne Reference #2 (~)"
   },
   "startDialog": {
     "en_US": {
@@ -44,7 +48,7 @@ exports.level = {
               "Say you want to move a lot of levels up in the commit tree. It might be tedious to type `^` several times, so Git also has the tilde (~) operator.",
               "",
               "",
-              "The tilde operator (optionally) takes in a trailing number that specifies the number of parents you would like to ascend. Let's see it in action"
+              "The tilde operator (optionally) takes in a trailing number that specifies the number of parents you would like to ascend. Let's see it in action."
             ]
           }
         },
@@ -291,7 +295,7 @@ exports.level = {
               "Vejamos o comando anterior em ação"
             ],
             "afterMarkdowns": [
-              "Aqui vamos nós! As referências relativas nos deram uma forma concisa de nos referirmos ao `C1`, e a movimentação de ramos (com `-f`) nos deu uma forma de apontar rapidamente um ramo para esse local"
+              "Aqui vamos nós! As referências relativas nos deram uma forma concisa de nos referirmos ao `C1`, e a movimentação de ramos (com `-f`) nos deu uma forma de apontar rapidamente um ramo para esse local."
             ],
             "command": "git branch -f master HEAD~3",
             "beforeCommand": "git commit; git commit; git commit; git checkout -b bugFix"
@@ -389,7 +393,7 @@ exports.level = {
               "Disons que vous souhaitez remonter beaucoup de niveaux dans l'arbre des commits. Cela peut être ennuyeux d'utiliser `^` plusieurs fois, ainsi Git a aussi l'opérateur tilde (~).",
               "",
               "",
-              "L'opérateur tilde prend optionnellement à sa suite un nombre qui spécifie le nombre de parents que vous souhaitez remonter. Voyons cela en action"
+              "L'opérateur tilde prend optionnellement à sa suite un nombre qui spécifie le nombre de parents que vous souhaitez remonter. Voyons cela en action."
             ]
           }
         },
@@ -426,7 +430,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Voyons l'effet de la précédente commande"
+              "Voyons l'effet de la précédente commande."
             ],
             "afterMarkdowns": [
               "On y est ! Les références relatives nous donnent une méthode concise pour référencer `C1` et le forçage de branche (`-f`) nous donne une méthode rapide pour bouger une branche à cet emplacement."
@@ -465,7 +469,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Geben wir mit `~` an wieviele Commits wir zurückgehen wollen"
+              "Geben wir mit `~` an wieviele Commits wir zurückgehen wollen."
             ],
             "afterMarkdowns": [
               "Peng! So einfach -- relative Referenzen sind super."
@@ -482,7 +486,7 @@ exports.level = {
               "",
               "Du bist jetzt Experte in Sachen relative Referenzen, also lass sie uns mal richtig einsetzen.",
               "",
-              "Das Verschieben von Branches ist einer der häufigsten Anwendungsfälle dafür. Du kannst einen Branchnamen direkt auf einen bestimmten Commit setzen (_ohne_ ihne vorher ausgecheckt haben zu müssen!) indem du den Parameter `-f` benutzt. So in etwa:",
+              "Das Verschieben von Branches ist einer der häufigsten Anwendungsfälle dafür. Du kannst einen Branchnamen direkt auf einen bestimmten Commit setzen (_ohne_ ihn vorher ausgecheckt haben zu müssen!) indem du den Parameter `-f` benutzt. So in etwa:",
               "",
               "`git branch -f master HEAD~3`",
               "",
@@ -776,7 +780,7 @@ exports.level = {
         }
       ]
     },
-	"ko": {
+  "ko": {
       "childViews": [
         {
           "type": "ModalAlert",
@@ -908,6 +912,144 @@ exports.level = {
               "Тепер, коли ти побачив відносні посилання та форсування гілок в купі, давай використаємо це щоб пройти поточний рівень.",
               "",
               "Щоб пройти цей рівень, перемісти `HEAD`, `master` та `bugFix` так як показано в візуалізації."
+            ]
+          }
+        }
+      ]
+    },
+    "vi": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "### Toán tử \"~\"",
+              "",
+              "Giả sử bạn muốn leo lên nhiều cấp trong git. Dùng `^` vài lần thì tù lắm, nên Git đã có dấu ngã (~) cho việc đó.",
+              "",
+              "",
+              "Theo sau toán tử ngã (~) là số lượng cha ông mà bạn muốn leo lên(không bắt buộc). Xem thử làm thật thì thế nào nào"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Hãy chỉ định số lượng commit với `~`."
+            ],
+            "afterMarkdowns": [
+              "BÙUM! Quá chuẩn luôn -- tham chiếu tương đối tuyệt vời."
+            ],
+            "command": "git checkout HEAD~4",
+            "beforeCommand": "git commit; git commit; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "### Branch forcing",
+              "",
+              "Giờ thì bạn là cao thủ về tham chiếu tương đối rồi, *làm* thật thôi chứ nhỉ.",
+              "",
+              "Tôi thì hay thường dùng tham chiếu tương đối để dịch chuyển nhánh. Bạn có thể trực tiếp gán lại nhánh cho commit với cú pháp `-f`. Kiểu như thế này:",
+              "",
+              "`git branch -f master HEAD~3`",
+              "",
+              "dịch chuyển (ép buộc) nhánh master lên 3 commit phía trên HEAD."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Xem thử cái lệnh trên hoạt động sao nào."
+            ],
+            "afterMarkdowns": [
+              "Đóóóó! Tham chiếu tương đối cho chúng ta một cách chuẩn xác để trỏ tới `C1` và ép nhánh bằng (`-f`) thì dịch chuyển nhanh chóng nhánh tới đó."
+            ],
+            "command": "git branch -f master HEAD~3",
+            "beforeCommand": "git commit; git commit; git commit; git checkout -b bugFix"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Giờ thì bạn đã thấy cách kết hợp tham chiếu tương đối và ép nhánh, dùng chúng để vượt level tiếp thôi.",
+              "",
+              "Để hoàn thành cấp độ này, chuyển `HEAD`, `master`, và `bugFix` đến mục tiêu được xác định của chúng."
+            ]
+          }
+        }
+      ]
+    },
+    "sl_SI": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "### Operator \"~\"",
+              "",
+              "Recimo, da se želiš premakniti veliko stopenj višje po drevesu commitov. Malo je nerodno večkrat tipkati `^`, zato ima Git tudi tilda (~) operator.",
+              "",
+              "",
+              "Tilda operator (opcijsko) sprejme številko, ki določi, koliko staršev bi se rad povzpel po drevesu. Poglejmo to v praksi."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Določimo število prejšnjih commitov z `~`."
+            ],
+            "afterMarkdowns": [
+              "Boom! Tako jedrnato -- relativne reference so super."
+            ],
+            "command": "git checkout HEAD~4",
+            "beforeCommand": "git commit; git commit; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "### Forcanje Branchev",
+              "",
+              "Sedaj si strokovnjak za relativne reference, zato jih končno *uporabimo* za nekaj.",
+              "",
+              "Eden izmed najpogostejših načinov, kjer uporabljam relativne reference je za premikanje branchev naokoli. Direktno lahko premakneš branch na nek commit z `-f` opcijo. Takole nekako:",
+              "",
+              "`git branch -f master HEAD~3`",
+              "",
+              "premakne (s force-om) master branch tri commite za HEAD."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Poglejmo si prejšnji ukaz v praksi."
+            ],
+            "afterMarkdowns": [
+              "Tako ja! Relativne reference so nam dale jedrnat način s katerim se lahko nanašamo na `C1` in branch force-anje (`-f`) nam je omogočilo, da hitro prestavimo branch na to lokacijo."
+            ],
+            "command": "git branch -f master HEAD~3",
+            "beforeCommand": "git commit; git commit; git commit; git checkout -b bugFix"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Sedaj ko smo si pogledali relativne reference in force branchanje v kombinaciji, uporabimo to, da rešimo naslednjo stopnjo.",
+              "",
+              "Za dokončanje te stopnje, premakni `HEAD`, `master` in `bugFix` na njihove ciljne prikazane destinacije."
             ]
           }
         }

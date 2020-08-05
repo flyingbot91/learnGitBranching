@@ -15,7 +15,9 @@ exports.level = {
     "zh_TW": "git tag",
     "ru_RU": "git tag",
     "ko"   : "Git 태그",
-    "uk"   : "Git Tags"
+    "uk"   : "Git Tags",
+    "vi"   : "Tag trong Git",
+    "sl_SI": "Git Tagi"
   },
   "hint": {
     "en_US": "you can either check out the commit directly or simply checkout the tag!",
@@ -30,7 +32,9 @@ exports.level = {
     "zh_CN": "你可以直接 checkout 到 commit 上，或是简单地 checkout 到 tag 上",
     "ru_RU": "Можно сделать checkout напрямую на коммит или же на тег",
     "ko"   : "커밋을 직접 또는 태그를 이용해서 체크아웃할수 있습니다!",
-    "uk"   : "ти можеш або зробити checkout коміта напряму чи просто зачекаутити таг!"
+    "uk"   : "ти можеш або зробити checkout коміта напряму чи просто зачекаутити таг!",
+    "vi"   : "Bạn có thể chuyển trực tiếp sang commit hoặc đơn giản là chuyển sang tag!",
+    "sl_SI": "Checkoutaš lahko neposredno commit ali pa preprosto njegov tag!"
   },
   "startDialog": {
     "en_US": {
@@ -64,10 +68,10 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Let's try making a tag at `C1` which is our version 1 prototype"
+              "Let's try making a tag at `C1` which is our version 1 prototype."
             ],
             "afterMarkdowns": [
-              "There! Quite easy. We named the tag `v1` and referenced the commit `C1` explicitly. If you leave the commit off, git will just use whatever `HEAD` is at"
+              "There! Quite easy. We named the tag `v1` and referenced the commit `C1` explicitly. If you leave the commit off, git will just use whatever `HEAD` is at."
             ],
             "command": "git tag v1 C1",
             "beforeCommand": "git commit"
@@ -116,7 +120,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Essayons de faire un tag sur C1 (qui représente la version 1 de notre prototype)"
+              "Essayons de faire un tag sur C1 (qui représente la version 1 de notre prototype)."
             ],
             "afterMarkdowns": [
               "Voila, facile non ? Nous nommons le tag `v1` et il pointe vers le commit `C1`. Si vous ne spécifiez pas le commit, le tag pointera là où se trouve `HEAD`."
@@ -275,7 +279,7 @@ exports.level = {
               "Creemos un tag en `C1`, que es nuestro prototipo de la versión 1"
             ],
             "afterMarkdowns": [
-              "¡Ahí está! Bastante simple. Nombramos al tag `v1` y referenciamos explícitamente al commit `C1`. Si no especificás el commit, git va a usar al apuntado por `HEAD`"
+              "¡Ahí está! Bastante simple. Nombramos al tag `v1` y referenciamos explícitamente al commit `C1`. Si no especificás el commit, git va a usar al apuntado por `HEAD`."
             ],
             "command": "git tag v1 C1",
             "beforeCommand": "git commit"
@@ -327,7 +331,7 @@ exports.level = {
               "Creemos un tag en `C1`, que es nuestro prototipo de la versión 1"
             ],
             "afterMarkdowns": [
-              "¡Ahí está! Bastante simple. Nombramos al tag `v1` y referenciamos explícitamente al commit `C1`. Si no especificas el commit, git va a usar al apuntado por `HEAD`"
+              "¡Ahí está! Bastante simple. Nombramos al tag `v1` y referenciamos explícitamente al commit `C1`. Si no especificas el commit, git va a usar al apuntado por `HEAD`."
             ],
             "command": "git tag v1 C1",
             "beforeCommand": "git commit"
@@ -379,7 +383,7 @@ exports.level = {
               "Criemos uma tag em `C1`, que é nosso protótipo da versão 1"
             ],
             "afterMarkdowns": [
-              "Aqui! Bem fácil. Nós chamamos a tag de `v1` e referenciamos o commit `C1` explicitamente. Se você chamar o comando sem especificar um commit, o git vai usar seja lá qual commit para o qual o `HEAD` estiver apontando"
+              "Aqui! Bem fácil. Nós chamamos a tag de `v1` e referenciamos o commit `C1` explicitamente. Se você chamar o comando sem especificar um commit, o git vai usar seja lá qual commit para o qual o `HEAD` estiver apontando."
             ],
             "command": "git tag v1 C1",
             "beforeCommand": "git commit"
@@ -587,7 +591,7 @@ exports.level = {
               "Создадим тег на `C1`, который будет нашей версией 1"
             ],
             "afterMarkdowns": [
-              "Готово! Всё просто. Мы назвали тег `v1` и заставили его ссылаться на `C1` явным образом. Если конкретный коммит не указан, гит пометит тегом `HEAD`"
+              "Готово! Всё просто. Мы назвали тег `v1` и заставили его ссылаться на `C1` явным образом. Если конкретный коммит не указан, гит пометит тегом `HEAD`."
             ],
             "command": "git tag v1 C1",
             "beforeCommand": "git commit"
@@ -613,7 +617,7 @@ exports.level = {
             "markdowns": [
               "## Git 태그",
               "",
-              "이전 강의에서 배웠듯이, 브랜치는 이동하기 쉽습니다. 작업의 완료, 진행에따라 이리저리 이동하면서 서로다른 커밋을 참조하게 됩니다. 브랜치는 쉽게 변하며 임시적인 것입니다 항상 바뀌고 있죠.",
+              "이전 강의에서 배웠듯이, 브랜치는 이동하기 쉽습니다. 작업의 완료, 진행에 따라 이리저리 이동하면서 서로 다른 커밋을 참조하게 됩니다. 브랜치는 쉽게 변하며 임시적인 것입니다 항상 바뀌고 있죠.",
               "",
               "이런 상황에서, 여러분은 여러분의 프로젝트의 역사(작업 이력)에서 중요한 지점들에 *영구적으로* 표시를 할 방법이 없을까 궁금할것입니다. 주요 릴리즈나 큰 브랜치 병합(merge)이 있을때가 그런 상황이겠군요. 이런 상황에 커밋들을 표시할 브랜치보다 영구적인 방법이 있을까요?",
               ""
@@ -704,6 +708,110 @@ exports.level = {
               "Для того щоб пройти цей рівень, достатньо створити кілька тагів, як показано на візуалізації цілей, і потім зачекаутити `v1`. Зауваж, що ти потрапиш в стан `detached HEAD` -- це тому що ти не можеш напряму комітити в таг `v1`.",
               "",
               "В наступному рівні ми розглянемо більш цікавий приклад роботи з тагами."
+            ]
+          }
+        }
+      ]
+    },
+    "vi": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Tag trong Git",
+              "",
+              "Qua các bài học trước, bạn đã biết được rằng rất dễ dàng để di chuyển qua lại giữa các nhánh và chúng thường tham chiếu đến các commit khác nhau trong quá trình ta làm việc trên chúng. Nhánh thường dễ biết đổi, thường chỉ là tạm thời và chúng luôn như vậy.",
+              "",
+              "Nếu như vậy thì bạn có thể sẽ thắc mắc liệu có cách nào để đánh dấu *vĩnh viễn* một thời điểm nào đó trong lịch sử làm việc không? Khi mà dự án càng ngày càng mở rộng và merge thì diễn ra liên tục, vậy thì có cách nào để đánh dấu những commit đó một cách cố định hơn nhánh không?",
+              ""
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Tất nhiên là có chứ! Git có các tag(thẻ) để hỗ trợ vấn đề này -- chúng (bằng cách nào đó) đánh dấu vĩnh viễn một commit cụ thể nào đó như một \"cột mốc\" mà sau đó bạn có thể tham chiếu đến như với nhánh.",
+              "",
+              "Quan trọng hơn là, khi ta commit thì chúng không hề bị di chuyển. Bạn không thể \"check out\" một tag rồi làm việc trên đó -- tag giống như là mỏ neo để chỉ định một điểm cụ thể nào dó trên cây lịch sử.",
+              "",
+              "Cùng xem tag thực tế là như thế nào nào."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Hãy thử tạo một thẻ ở commit `C1` chỉ định rằng đây là phiên bản thứ nhất của ta."
+            ],
+            "afterMarkdowns": [
+              "Đó! Đơn giản như đan rổ. Ta tạo ra thẻ `v1` và tham chiếu đến commit `C1`. Nếu bạn không chỉ định commit, git sẽ gắn thẻ vào commit mà `HEAD` đang trỏ tới"
+            ],
+            "command": "git tag v1 C1",
+            "beforeCommand": "git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Trong cấp độ này hãy tạo ra một thẻ tại vị trí chỉ định và chuyển sang `v1`. Để ý rằng bạn sẽ chuyến sang trạng thái tách biệt `HEAD` -- bởi vì bạn không thể tham chiếu đến thẻ `v1`.",
+              "",
+              "Sang cấp độ tới ta sẽ xem xét một vài cách hay ho để dùng thẻ."
+            ]
+          }
+        }
+      ]
+    },
+    "sl_SI": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git Tagi",
+              "",
+              "Kot si se naučil v prejšnjih lekcijah, so branchi enostavni za premikat okoli in pogosto kažejo na različne commite in delo za njimi. Veliko se spreminjajo in združujejo, pogosto le začasno.",
+              "",
+              "Če je temu res tako, se morda sprašuješ, če obstaja kak način, ki bi *trajno* označil točke v zgodovini projekta. Za stvari kot so večji release-i ali pomembni merge-i, ali obstaja način, ki je trajnejši kot branch?",
+              ""
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Itak da je! Git tagi podpirajo točno ta primer uporabe -- oni trajno (do neke mere) označijo določene commite kot \"mejnike\" na katere se lahko sklicujemo kot na branche.",
+              "",
+              "Toda še pomembneje, oni se ne premikajo, ko se ustvarjajo novi commiti. Ne moreš \"checkoutat\" tag in nato končati delo na tem tagu -- tagi obstajajo kot sidra na drevesu commitov, ki označujejo določene točke.",
+              "",
+              "Poglejmo kako to izgleda v praksi."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Poizkusimo narediti tag na `C1`, ki je recimo naša prva različica prototipa."
+            ],
+            "afterMarkdowns": [
+              "Tako! Kar enostavno. Tag smo poimenovali `v1` in se sklicuje na commit `C1`. Če ne navedeš commita, bo git postavil tag tam, kjer je trenutno `HEAD`."
+            ],
+            "command": "git tag v1 C1",
+            "beforeCommand": "git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Za to stopnjo ustvari tage kot so določeni na ciljnem prikazu in nato checkoutaj `v1`. Opazil boš, kako prideš v stanje ločenega `HEAD-a` -- to je zato, ker ne moreš commitat direktno na `v1` tag.",
+              "",
+              "V naslednji stopnji si bomo pogledali zanimivejši primer za uporabo tagov."
             ]
           }
         }

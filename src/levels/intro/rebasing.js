@@ -14,7 +14,9 @@ exports.level = {
     "zh_CN": "Git Rebase",
     "zh_TW": "介紹 rebase",
     "ru_RU": "Введение в rebase",
-    "uk": "Знайомство з rebase"
+    "uk": "Знайомство з rebase",
+    "vi": "Giới thiệu về rebase",
+    'sl_SI': 'Uvod v Rebase'
   },
   "hint": {
     "en_US": "Make sure you commit from bugFix first",
@@ -29,7 +31,9 @@ exports.level = {
     "zh_CN": "先在 bugFix 分支上进行提交",
     "zh_TW": "你要先在 bugFix branch 進行 commit",
     "ru_RU": "Убедись, что сделал коммит в ветке bugFix",
-    "uk": "Впевнись, що зробив коміт в гілці bugFix"
+    "uk": "Впевнись, що зробив коміт в гілці bugFix",
+    "vi": "Hãy chắc chắn rằng bạn commit từ bugFix trước",
+    'sl_SI': 'Prepričaj se, da si najprej commital bugFix.'
   },
   "disabledMap": {
     "git revert": true
@@ -59,7 +63,7 @@ exports.level = {
               "",
               "We would like to move our work from bugFix directly onto the work from master. That way it would look like these two features were developed sequentially, when in reality they were developed in parallel.",
               "",
-              "Let's do that with the `git rebase` command"
+              "Let's do that with the `git rebase` command."
             ],
             "afterMarkdowns": [
               "Awesome! Now the work from our bugFix branch is right on top of master and we have a nice linear sequence of commits.",
@@ -260,7 +264,7 @@ exports.level = {
               "",
               "Nos gustaría mover nuestro trabajo de bugFix directamente sobre el trabajo de master. De ese modo, parecería que esas dos tareas se desarrollaron secuencialmente, cuando en realidad se hicieron en paralelo.",
               "",
-              "Hagámoslo usando el comando `git rebase`"
+              "Hagámoslo usando el comando `git rebase`."
             ],
             "afterMarkdowns": [
               "¡Genial! Ahora el trabajo de nuestra rama bugFix está justo encima del de master, y tenemos una secuencia lineal de commits.",
@@ -327,7 +331,7 @@ exports.level = {
               "",
               "Nos gustaría mover nuestro trabajo de bugFix directamente sobre el trabajo de master. De ese modo, parecería que esas dos tareas se desarrollaron secuencialmente, cuando en realidad se hicieron en paralelo.",
               "",
-              "Hagámoslo usando el comando `git rebase`"
+              "Hagámoslo usando el comando `git rebase`."
             ],
             "afterMarkdowns": [
               "¡Genial! Ahora el trabajo de nuestra rama bugFix está justo encima del de master, y tenemos una secuencia lineal de commits.",
@@ -394,7 +398,7 @@ exports.level = {
               "",
               "Queremos mover nosso trabalho do bugFix diretamente dentro do master. Desta forma, vai parecer que esses dois recursos foram desenvolvidos sequencialmente, quando na realidade foram feitos em paralelo.",
               "",
-              "Vamos fazê-lo com o comando `git rebase`"
+              "Vamos fazê-lo com o comando `git rebase`."
             ],
             "afterMarkdowns": [
               "Incrível! Agora o trabalho do nosso ramo bugFix está logo após o do master, e temos uma linda sequência linear de commits.",
@@ -461,7 +465,7 @@ exports.level = {
               "",
               "Queremos mover o noso traballo do `bugFix` directamente dentro da rama `master`. Desta forma, vai parecer que eses dous recursos foron editados secuencialmente, cando a realidade é que se fixeron en paralelo.",
               "",
-              "Imos lanzar o comando `git rebase`"
+              "Imos lanzar o comando `git rebase`."
             ],
             "afterMarkdowns": [
               "¡Buah chorvo! Agora o traballo da nosa rama `bugFix` está seguida de master, e temos unha fermosa línea de commits.",
@@ -528,7 +532,7 @@ exports.level = {
               "",
               "Nous voudrions transférer notre travail de la branche 'bugFix' directement sur le travail existant dans 'master'. Ainsi on aurait l'impression que ces deux travaux ont été développés séquentiellement alors qu'en réalité ils ont été réalisés en parallèle.",
               "",
-              "Faisons cela avec la commande `git rebase`"
+              "Faisons cela avec la commande `git rebase`."
             ],
             "afterMarkdowns": [
               "Super! Désormais, le travail de la branche 'bugFix' est juste en haut de la branche 'master' et nous avons une belle séquence linéaire de commits.",
@@ -547,6 +551,11 @@ exports.level = {
             "beforeMarkdowns": [
               "Nous sommes désormais positionnés sur la branche `master`. Continuons en faisant le rebase sur `bugFix`…",
               "Et voilà ! Puisque `master` était un ascendant de `bugFix`, git a simplement déplacé la référence de la branche `master` en avant dans le temps."
+            ],
+            "afterMarkdowns": [
+              "Voilà vous avez vu comment cela fonctionne",
+              "",
+              "Continuons et essayons ce niveau !"
             ],
             "command": "git rebase bugFix",
             "beforeCommand": "git commit; git checkout -b bugFix C1; git commit; git rebase master; git checkout master"
@@ -794,7 +803,7 @@ exports.level = {
               "",
               "Хочется сдвинуть наши изменения из `bugFix` прямо на вершину ветки `master`. Благодаря этому всё будет выглядеть, как будто эти изменения делались последовательно, хотя на самом деле - параллельно.",
               "",
-              "Применим `git rebase`"
+              "Применим `git rebase`."
             ],
             "afterMarkdowns": [
               "Супер! Теперь изменения из `bugFix` находятся в конце ветки `master` и являют собой линейную последовательность коммитов.",
@@ -811,7 +820,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Вот мы выбрали ветку `master`. Вперёд - сделаем rebase на `bugFix`"
+              "Вот мы выбрали ветку `master`. Вперёд - сделаем rebase на `bugFix`."
             ],
             "afterMarkdowns": [
               "Вуаля! Так как `master` был предком `bugFix`, git просто сдвинул ссылку на `master` вперёд."
@@ -861,7 +870,7 @@ exports.level = {
               "",
               "Ми хочемо перемістити наші зміни з гілки bugFix прямо до змін з гілки master. Тоді це буде виглядати наче ці зміни були додані одна за одною, хоча насправді вони були додані одночасно.",
               "",
-              "Давайте зробимо це за допомогою команди `git rebase`"
+              "Давайте зробимо це за допомогою команди `git rebase`."
             ],
             "afterMarkdowns": [
               "Добре! Тепер зміни з гілки bugFix знаходяться прямо попереду змін з master й ми отримали зручну лінійну послідовність комітів.",
@@ -899,6 +908,139 @@ exports.level = {
               "* Зачекауть bugFix знову й заребейсь його на master",
               "",
               "Нехай щастить!"
+            ]
+          }
+        }
+      ]
+    },
+    "vi": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git Rebase",
+              "",
+              "Cách thứ 2 để kết hợp thành của của 2 nhánh là *rebase.* Rebase về căn bản là chọn một loạt các commit, \"sao chép\" chúng, và ném chúng sang chỗ khác.",
+              "",
+              "Nghe có vẻ phức tạp, lợi thế của rebase là có thể tạo ra cây lịch sử thẳng tuột. Ljch sử commit nhìn sẽ gọn gàng hơn nhiều.",
+              "",
+              "Xem nó hoạt động thế nào nào..."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Giờ ta lại có 2 nhánh; để ý rằng nhánh bugFix đang được chọn (thấy dấu hoa thị chứ?)",
+              "",
+              "Ta muốn chuyển bugFix trực tiếp sang master. Theo cách đó thì các chức năng nhìn có vẻ được phát triển tuần tự, trong khi thực tế chúng được phát triển song song.",
+              "",
+              "Dùng lệnh `git rebase` để thử nào"
+            ],
+            "afterMarkdowns": [
+              "Tuyệt vời! Giờ thành quả của nhánh bugFix nằm ngay trên master và ta có các commit nằm thẳng tuột.",
+              "",
+              "Để ý rằng commit C3 vẫn nằm đâu đó (đã được làm mờ), và commit C3' là bản \"sao chép\" mà ta dán lên nhánh master.",
+              "",
+              "Vấn đề duy nhất bây giờ là nhánh master vẫn chưa được cập nhật, làm luôn cho nóng nào..."
+            ],
+            "command": "git rebase master",
+            "beforeCommand": "git commit; git checkout -b bugFix C1; git commit"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Giờ thì ta đã chuyển sang nhánh `master`. Tiếp tục dán nó vào `bugFix` nào..."
+            ],
+            "afterMarkdowns": [
+              "Đó! Bởi vì `master` là cha ông của `bugFix`, git đơn giản chuyển tham chiếu của nhánh `master` tiến lên."
+            ],
+            "command": "git rebase bugFix",
+            "beforeCommand": "git commit; git checkout -b bugFix C1; git commit; git rebase master; git checkout master"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Để hoàn thành cấp độ này, làm theo hướng dẫn sau",
+              "",
+              "* Chuyển sang nhánh mới tên là `bugFix`",
+              "* Commit một lần",
+              "* Quay về master và commit lần nữa",
+              "* Quay trở lại bugFix và rebase sang master",
+              "",
+              "Chúc may mắn!"
+            ]
+          }
+        }
+      ]
+    },"sl_SI": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git Rebase",
+              "",
+              "Drugi način kombiniranja dela med branchi je *rebasing*. Rebasing vzame listo commitov, jih \"skopira\", nato pa jih položi nekam drugam.",
+              "",
+              "To se morda sliši komplicirano, ampak prednost rebeasinga je, da se ga lahko uporabi za lepo linearno zaporedje commitov. Commit log / zgodovina repozitorija bo dosti lepša, če je dovoljeno le rebaseanje.",
+              "",
+              "Poglejmo to na primeru ..."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Tu imamo spet dva brancha; trenutno izbran je branch bugFix (zvezdica).",
+              "",
+              "Radi bi prestavili naše delo iz bugFix direktno na delo iz masterja. Tako bi izgledalo, kot da sta bili ti dve funkcionalnosti razviti zaporedno, v resnici pa sta bili razviti vzporedno.",
+              "",
+              "Naredimo sedaj to z `git rebase` ukazom."
+            ],
+            "afterMarkdowns": [
+              "Super! Sedaj je naše delo iz bugFix brancha na vrhu masterja in imamo lepo zaporedje commitov.",
+              "",
+              "Omenimo, da commit C3 še vedno obstaja nekje (v drevesu je zbledel), in C3' je v bistvu \"kopija\", ki smo jo rebaseali na master.",
+              "",
+              "Edini problem je, da tudi master ni bil posodobljen, naredimo to sedaj ..."
+            ],
+            "command": "git rebase master",
+            "beforeCommand": "git commit; git checkout -b bugFix C1; git commit"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Sedaj smo checkoutani na `master` branchu. Pojdimo in rebaseajmo na `bugFix`..."
+            ],
+            "afterMarkdowns": [
+              "Tako! Ker je bil `master` prednik `bugFix`, je git enostavno premaknil `master` branch referenco naprej v zgodovini."
+            ],
+            "command": "git rebase bugFix",
+            "beforeCommand": "git commit; git checkout -b bugFix C1; git commit; git rebase master; git checkout master"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Da zaključiš to stopnjo, naredi naslednje:",
+              "",
+              "* Checkoutaj nov branch poimenovan `bugFix`",
+              "* Enkrat commitaj",
+              "* Pojdi nazaj na master in commitaj ponovno",
+              "* Ponovno checkoutaj bugFix in ga rebaseaj na master",
+              "",
+              "Srečno!"
             ]
           }
         }

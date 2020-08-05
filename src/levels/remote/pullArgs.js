@@ -15,7 +15,9 @@ exports.level = {
     "fr_FR": "Arguments de pull",
     "ru_RU": "Аргументы для pull",
     "ko"   : "pull 인자들",
-    "uk"   : "Аргументи pull"
+    "uk"   : "Аргументи pull",
+    "vi"   : "Tham số pull",
+    "sl_SI": "Pull argumenti"
   },
   "hint": {
     "en_US": "Remember that you can create new local branches with fetch/pull arguments",
@@ -30,7 +32,9 @@ exports.level = {
     "fr_FR": "Vous pouvez aussi créer une nouvelle branche locale avec les arguments de fetch/pull",
     "ru_RU": "Напоминаю, что новые ветки можно создавать и с помощью команд fetch/pull",
     "ko"   : "fetch/pull 과 인자들로 새 로컬 브랜치를 생성할수 있다는것을 기억하세요.",
-    "uk"   : "Пам'ятай, що ти можеш створювати нові гілки, використовуючи fetch/pull з аргументами"
+    "uk"   : "Пам'ятай, що ти можеш створювати нові гілки, використовуючи fetch/pull з аргументами",
+    "vi"   : "Nhớ rằng,bạn có thể tạo nhánh cục bộ mới với tham số của fetch/pull",
+    "sl_SI": "Zapomni si, da lahko ustvariš nove lokalne branche s fetch/pull argumenti."
   },
   "startDialog": {
     "en_US": {
@@ -75,7 +79,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "If we specify the place to fetch, everything happens as before with fetch but we merge in whatever was just fetched"
+              "If we specify the place to fetch, everything happens as before with fetch but we merge in whatever was just fetched."
             ],
             "afterMarkdowns": [
               "See! by specifying `master` we downloaded commits onto `o/master` just as normal. Then we merged `o/master` to our currently checked out location which is *not* the local branch `master`. For this reason it can actually make sense to run git pull multiple times (with the same args) from different locations in order to update multiple branches."
@@ -223,7 +227,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Si especificamos el lugar del que hacer fetch, todo ocurre como antes, pero sólo mergeamos lo que se fetcheó"
+              "Si especificamos el lugar del que hacer fetch, todo ocurre como antes, pero sólo mergeamos lo que se fetcheó."
             ],
             "afterMarkdowns": [
               "¡Ves! Especificando `master` bajamos los commits a `o/master` como siempre. Después mergeamos `o/master` a nuestra rama actual, *sin importar* qué había en nuestra copia de trabajo."
@@ -297,7 +301,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Si especificamos el lugar desde donde hacer fetch, todo ocurre como antes, pero sólo mergeamos lo que se fetcheó"
+              "Si especificamos el lugar desde donde hacer fetch, todo ocurre como antes, pero sólo mergeamos lo que se fetcheó."
             ],
             "afterMarkdowns": [
               "¡Ves! Especificando `master` descargamos los commits a `o/master` como siempre. Después mergeamos `o/master` a nuestra rama actual, *sin importar* qué había en nuestra copia de trabajo."
@@ -371,7 +375,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Se especificarmos o lugar onde fazer o fetch, tudo acontece como antes com o fetch, mas fazemos o merge naquilo que acabou de ser baixado"
+              "Se especificarmos o lugar onde fazer o fetch, tudo acontece como antes com o fetch, mas fazemos o merge naquilo que acabou de ser baixado."
             ],
             "afterMarkdowns": [
               "Veja! Especificando `master` nós baixamos commits em `o/master` como sempre. Então fizemos um merge de `o/master` com o lugar onde estamos, *independente* daquilo que está atualmente em checkout."
@@ -445,7 +449,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Se especificamos o lugar do que facer o fetch, todo ocorre coma antes, pero só mesturamos o que se descargou"
+              "Se especificamos o lugar do que facer o fetch, todo ocorre coma antes, pero só mesturamos o que se descargou."
             ],
             "afterMarkdowns": [
               "¡Ves! Indicando `master` baixamos os commits á `o/master` coma sempre. Despois mesturamos `o/master` á nosa rama actual, *sen importar* qué tiñamos na nos copia de traballo."
@@ -741,7 +745,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Здесь сначала выполнится fetch с аргументом указанным к pull, а merge выполняется с теми изменениями, которые будут скачаны командой fetch"
+              "Здесь сначала выполнится fetch с аргументом указанным к pull, а merge выполняется с теми изменениями, которые будут скачаны командой fetch."
             ],
             "afterMarkdowns": [
               "Как видно, мы указали `master`, поэтому как обычно все обновления притянулись на ветку `o/master`. Затем мы слили (merge) обновленную ветку `o/master` с веткой, на которой мы находимся."
@@ -805,7 +809,7 @@ exports.level = {
               "",
               "`git fetch origin bar~1:bugFix; git merge bugFix`",
               "",
-              "보이죠? git pull은 그저 fetch + merge의 축양형일 뿐이에요, 그리고 git pull은 커밋들이 도착하는곳을 신경씁니다(fetch를 하며 지정된 `destination`인자의 위치로 merge가 수행됩니다).",
+              "보이죠? git pull은 그저 fetch + merge의 축약형일 뿐이에요, 그리고 git pull은 커밋들이 도착하는곳을 신경씁니다(fetch를 하며 지정된 `destination`인자의 위치로 merge가 수행됩니다).",
               "",
               "직접 확인해봅시다:"
             ]
@@ -916,6 +920,154 @@ exports.level = {
           "options": {
             "markdowns": [
               "Добре, для завершення спробуй досягти стану репозиторію, показаного на візуалізації. Треба буде звантажити відсутні коміти, створити нові гілки і змерджити їх в інші гілки, але не надто великою кількістю команд! :P"
+            ]
+          }
+        }
+      ]
+    },
+    "vi": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Tham số git pull",
+              "",
+              "Giờ thì bạn đã biết gần như là *tất cả* về tham số của `git fetch` và `git push`, thế thì hầu như chẳng còn gì mới cho git pull cả :)",
+              "",
+              "Đó và vì nói cho cùng thì git pull *về thực tế* cũng chỉ là lệnh tắt cho tìm nạp và sau đó là hợp nhất những gì vừa mới được nạp. Bạn có thể coi nó như là chạy lệnh git fetch với *cùng* tham số được chỉ định và sau đó hợp nhất các commit vào *nơi* được chỉ định.",
+              "",
+              "Điều này được áp dụng kể cả khi bạn sử dụng những tham số phức tạp đến độ điên rồ. Hãy xem qua một vài ví dụ:"
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Dưới đây là một vài câu lệnh tương đồng nhau trong git:",
+              "",
+              "`git pull  origin foo` tương đương với:",
+              "",
+              "`git fetch origin foo; git merge o/foo`",
+              "",
+              "Và...",
+              "",
+              "`git pull  origin bar~1:bugFix` tương đương với:",
+              "",
+              "`git fetch origin bar~1:bugFix; git merge bugFix`",
+              "",
+              "Thấy chứ? git pull thực ra chỉ là lệnh tắt cho fetch + merge, và tất cả những gì git pull quan tâm là nơi mà các commit sẽ tới (tham số `đích` mà nó diễn giải được trong quá trình nạp).",
+              "",
+              "Hãy xem qua một bản giới thiệu:"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Nếu ta chỉ định vị trí để nạp, mọi thứ diễn ra như với git fetch nhưng giờ đây có thêm một bước đó là ta hợp nhất những gì mà ta đã nạp"
+            ],
+            "afterMarkdowns": [
+              "Thấy chứ! Bằng cách chỉ định nhánh `master` ta tải các commit xuống nhánh `o/master` như thường lệ. Sau đó hợp nhất nhánh `o/master` vào nhánh cục bộ mà ta đang đứng, nhánh mà *không phải* nhánh cục bộ `master`. Nhờ vậy mà ta có thể chạy cùng một lệnh git pull(với cùng tham số) nhiều lần ở những vị trí khác nhau để áp dụng cùng cập nhật lên các nhánh khác nhau."
+            ],
+            "command": "git pull origin master",
+            "beforeCommand": "git clone; go -b bar; git commit; git fakeTeamwork"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Điều này có hoạt động với đích và nguồn không? Đoán đúng rồi đấy! Cùng xem thử nào:"
+            ],
+            "afterMarkdowns": [
+              "Wao, quá NHIỀU trong một câu lệnh. Ta tạo ra một nhánh cục bộ là `foo`, tải commit xuống từ nhánh từ xa master xuống nhánh `foo` đó, và sau đó hợp nhất commit vào nhánh `bar` mà ta đang đứng. Đủ thứ luôn!!!"
+            ],
+            "command": "git pull origin master:foo",
+            "beforeCommand": "git clone; git fakeTeamwork; go -b bar; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Được rồi, để kết thúc khóa học, hãy đạt đến mục tiêu được mô tả. Bạn sẽ cần tải xuống vài commit, tạo ra vài nhánh mới, và hợp nhất những nhánh đó sang những nhánh khác, nhưng mà đừng dùng nhiều lệnh quá nhé :P"
+            ]
+          }
+        }
+      ]
+    },
+    "sl_SI": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git pull argumenti",
+              "",
+              "Sedaj, ko veš praktično *vse*, kar je za vedeti o argumentih za `git fetch` in `git push`, ni skoraj ničesar za dodati za `git pull` :)",
+              "",
+              "To je zato, ker je git pull konec koncev *res* samo bližnjica za fetch, ki mu sledi merge tega, kar smo fetchali. Predstavljaš si ga lahko kot ukaz git fetch z *istimi* podanimi argumenti in merganjem, *kjer* bodo tisti commiti končali.",
+              "",
+              "To velja tudi takrat, ko uporabiš noro komplicirane argumente. Poglejmo nekaj primerov:"
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Tu je nekaj ukazov v gitu:",
+              "",
+              "`git pull  origin foo` je enak:",
+              "",
+              "`git fetch origin foo; git merge o/foo`",
+              "",
+              "In ...",
+              "",
+              "`git pull  origin bar~1:bugFix` je enak:",
+              "",
+              "`git fetch origin bar~1:bugFix; git merge bugFix`",
+              "",
+              "Vidiš? Git pull je res bližnjica za fetch + merge. Vse kar zanima git pull je, kje bodo commiti končali (`ciljni` argument, ki ga ugotovi med fetchem).",
+              "",
+              "Poglejmo primer:"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Če določimo mesto za fetchanje, se zgodi vse kot prej s fetchem, ampak tudi zmergamo, kar smo pravkar fetchali."
+            ],
+            "afterMarkdowns": [
+              "Vidiš! Z določitvijo `master` smo prenesli commite na `o/master` kot ponavadi. Potem smo zmergali `o/master` v našo trenutno checkoutano lokacijo, ki *ni* lokalni branch `master`. Zaradi tega razloga je morda celo logično, da izvedemo git pull večkrat (z istimi argumenti) iz drugi lokacij, da posodobimo več branchev."
+            ],
+            "command": "git pull origin master",
+            "beforeCommand": "git clone; go -b bar; git commit; git fakeTeamwork"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Ali deluje tudi z izvorom in ciljem? Itak! Poglejmo to:"
+            ],
+            "afterMarkdowns": [
+              "Wow, to je pa RES veliko v enem ukazu. Naredili smo nov lokalen branch imenovan `foo`, prenesli commite iz oddaljenega masterja na ta branch `foo` in potem zmergali ta branch v naš trenutno checkoutan branch `bar`. Je več kot 9000!!!"
+            ],
+            "command": "git pull origin master:foo",
+            "beforeCommand": "git clone; git fakeTeamwork; go -b bar; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Ok, da zaključiš, pridi v stanje iz ciljne vizualizacije. Prenesti boš moral nekaj commitov, narediti nekaj novih branchev in zmergati te branche v druge branche, ampak ne bi smelo zahtevati veliko ukazov. :P"
             ]
           }
         }

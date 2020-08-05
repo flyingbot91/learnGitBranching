@@ -15,7 +15,9 @@ exports.level = {
     "fr_FR": "Arguments de git push -- toujours plus !",
     "ru_RU": "Аргументы для push -- расширенная версия!",
     "ko"   : "git push 인자 -- 확장판!",
-    "uk"   : "Розширені аргументи git push!"
+    "uk"   : "Розширені аргументи git push!",
+    "vi"   : "Tham số git push -- bản mở rộng!",
+    "sl_SI": "Git push argumenti -- Razširjeni!"
   },
   "hint": {
     "en_US": "Remember you can admit defeat and type in \"show solution\" :P",
@@ -30,7 +32,9 @@ exports.level = {
     "fr_FR": "N'oubliez pas que vous pouvez toujours déclarer forfait avec \"show solution\" :P",
     "ru_RU": "Помните, Вы всегда можете признать своё поражение, набрав команду \"show solution\" (показать решение) :P",
     "ko"   : "혹시 아세요? 패배를 인정하고 \"show solution\"을 입력할 수 있다는 걸요 :P",
-    "uk"   : "Пам'ятай, ти завжди можеш визнати поразку і підглянути рішення командою \"show solution\" :P"
+    "uk"   : "Пам'ятай, ти завжди можеш визнати поразку і підглянути рішення командою \"show solution\" :P",
+    "vi"   : "Nhớ rằng, bạn có thể thừa nhận thất bại và gõ \"show solution\" :P",
+    "sl_SI": "Vedno se lahko predaš in napišeš \"show solution\". :P"
   },
   "startDialog": {
     "en_US": {
@@ -435,7 +439,7 @@ exports.level = {
               "¿E qué hai se o destino ó que queres empurrar non existise? ¡Non pasa nada! Sinxelamente dalle un nome á rama e git vaise encargar de crealo no remoto."
             ],
             "afterMarkdowns": [
-              "Xenial, sinxelamente tira para adiante"
+              "Xenial, sinxelamente tira para adiante."
             ],
             "command": "git push origin master:newBranch",
             "beforeCommand": "git clone; git commit"
@@ -866,6 +870,146 @@ exports.level = {
           "options": {
             "markdowns": [
               "На цьому рівні спробуй досягти стану ропозиторію, показаного у візуалізації і пам'ятай про формат запису з двокрапкою:",
+              "",
+              "`<source>:<destination>`"
+            ]
+          }
+        }
+      ]
+    },
+    "vi": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Chi tiết về tham số `<vị trí>`",
+              "",
+              "Nhớ lại học trước, khi chỉ định tham số `<vị trí>` là `master` cho lệnh `git push`, ta cũng đã chỉ định nguồn và đích cho các commit.",
+              "",
+              "Có thể bạn sẽ thắng mắc -- Nếu như ta muốn nguồn và đích khác đi thì sao? Nếu như ta muốn đẩy commit từ nhánh cục bộ `foo` lên nhánh từ xa `bar` thì sao?",
+              "",
+              "Chà đáng tiếc là điều này là bất khả thi tron git... đùa thôi! Tất nhiên là làm được chứ :)... git có nhiều và rất nhiều lựa chọn linh động(có lẽ là quá nhiều)",
+              "",
+              "Hãy xem cách nó hoạt động ..."
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Để chỉ định `<vị trí>` cho cả nguồn và đích, chỉ cần sử dụng dấu hai chấm `:` để kết nối cả hai:",
+              "",
+              "`git push origin <nguồn>:<đích>`",
+              "",
+              "Giá trị thực của tham số này là một refspec, \"refspec\" là một từ tự tạo, nghĩa là một vị trí được Git nhận ra (chẳng hạn như nhánh `foo` hoặc` HEAD ~ 1`).",
+              "",
+              "Một khi bạn đã chỉ định các nguồn và đích độc lập, bạn có thể thao tác với kho chứa từ xa một cách khá thú vị và chính xác, hãy xem bản demo!"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Nhớ rằng, `nguồn` là bất kỳ vị trí nào mà git hiểu:"
+            ],
+            "afterMarkdowns": [
+              "Wao! Lệnh này khá phức tạp, nhưng mà hợp lý -- git diễn giải `foo^` thành một vị trí, tải lên tất cả các commit từ đó trở về trước mà chưa có trên nhánh đích rồi cập nhật nó."
+            ],
+            "command": "git push origin foo^:master",
+            "beforeCommand": "git clone; go -b foo; git commit; git commit"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Nếu như đích đến mà bạn muốn không tồn tại thì sao? Chẳng sao cả! Đơn giản hãy gõ tên nhánh và git sẽ tạo nhánh đó trên kho chứa từ xa cho bạn."
+            ],
+            "afterMarkdowns": [
+              "Tuyệt vời, thấy git thú vị không :D"
+            ],
+            "command": "git push origin master:newBranch",
+            "beforeCommand": "git clone; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Ở cấp độ này, hãy hoàn thành mục tiêu được mô tả, và hãy nhớ cấu trúc:",
+              "",
+              "`<nguồn>:<đích>`"
+            ]
+          }
+        }
+      ]
+    },
+    "sl_SI": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Podrobnosti `<place>` argumenta",
+              "",
+              "Spomni se prejšnje lekcije, kjer smo določili `master` kot place argument za git push, določili smo *izvor* iz kje bodo commiti prišli in *destinacijo*, kamor bodo commiti odšli.",
+              "",
+              "Morda se sprašuješ -- kaj če želimo, da sta izvor in destinacija različna? Kaj če želiš pushati commite iz lokalnega `foo` brancha na oddaljen `bar` branch?",
+              "",
+              "Nažalost to v gitu ni možno ... hecam se! Seveda je možno :) ... git ima ogromno opcij (skoraj preveč).",
+              "",
+              "Poglejmo kako v naslednjem razdelku ..."
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Da bi določili in izvor in destinacijo `<place-a>`, preprosto združimo oba skupaj z dvopičjem:",
+              "",
+              "`git push origin <source>:<destination>`",
+              "",
+              "To je pogosto omenjeno kot dvopična referenca. Ta referenca je samo ime za lokacijo, ki jo lahko git razvozla (kot je branch `foo` ali samo `HEAD~1`).",
+              "",
+              "Ko enkrat določiš izvor in destinacijo neodvisno, lahko oddaljene ukaze uporabljaš zelo natačno in učinkovito. Poglejmo si primer!"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Pomni, `source` je bilokatera lokacija, ki jo git razume:"
+            ],
+            "afterMarkdowns": [
+              "Woah! To je kar zanimiv ukaz, ampak ima smisel -- git je razrešil `foo^` v lokacijo, naložil commite, ki še niso bili prisotni v oddaljenem repotu in nato posodobil destinacijo."
+            ],
+            "command": "git push origin foo^:master",
+            "beforeCommand": "git clone; go -b foo; git commit; git commit"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Kaj če destinacija kamor želiš pushati ne obstaja? Ni problem! Samo podaj ime brancha in git bo naredil branch na oddaljenem repotu zate."
+            ],
+            "afterMarkdowns": [
+              "Lepa, to je kar kul :D"
+            ],
+            "command": "git push origin master:newBranch",
+            "beforeCommand": "git clone; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Za to stopnjo poizkusi priti v ciljno stanje, prikazano v vizualizaciji in si zapomni obliko:",
               "",
               "`<source>:<destination>`"
             ]

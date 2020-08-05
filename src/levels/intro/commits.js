@@ -12,7 +12,9 @@ exports.level = {
     'zh_CN': 'Git Commit',
     'zh_TW': '介紹 git commit ',
     'ru_RU': 'Знакомство с Git Commit ',
-    'uk': 'Знайомство з комітами в Git'
+    'uk': 'Знайомство з комітами в Git',
+    'vi': 'Giới thiệu về Git Commit',
+    'sl_SI': "Uvod v Git Commit"
   },
   "goalTreeString": "{\"branches\":{\"master\":{\"target\":\"C3\",\"id\":\"master\"}},\"commits\":{\"C0\":{\"parents\":[],\"id\":\"C0\",\"rootCommit\":true},\"C1\":{\"parents\":[\"C0\"],\"id\":\"C1\"},\"C2\":{\"parents\":[\"C1\"],\"id\":\"C2\"},\"C3\":{\"parents\":[\"C2\"],\"id\":\"C3\"}},\"HEAD\":{\"target\":\"master\",\"id\":\"HEAD\"}}",
   "solutionCommand": "git commit;git commit",
@@ -30,7 +32,9 @@ exports.level = {
     "ja"   : "'git commit'コマンドを2回打てば完成!",
     "ko": "'git commit'이라고 두 번 치세요!",
     "ru_RU": "Попробуй дважды выполнить команду 'git commit' ;)",
-    "uk": "Спробуй двічі виконати команду 'git commit' ;)"
+    "uk": "Спробуй двічі виконати команду 'git commit' ;)",
+    'vi': "Đơn giản là cứ gõ 'git commit' 2 lần",
+    'sl_SI': "Preprosto dvakrat vpiši 'git commit' in zaključi!"
   },
   "disabledMap": {
     "git revert": true
@@ -59,7 +63,7 @@ exports.level = {
             "beforeMarkdowns": [
               "Let's see what this looks like in practice. On the right we have a visualization of a (small) git repository. There are two commits right now -- the first initial commit, `C0`, and one commit after that `C1` that might have some meaningful changes.",
               "",
-              "Hit the button below to make a new commit"
+              "Hit the button below to make a new commit."
             ],
             "afterMarkdowns": [
               "There we go! Awesome. We just made changes to the repository and saved them as a commit. The commit we just made has a parent, `C1`, which references which commit it was based off of."
@@ -72,7 +76,7 @@ exports.level = {
           "type": "ModalAlert",
           "options": {
             "markdowns": [
-              "Go ahead and try it out on your own! After this window closes, make two commits to complete the level"
+              "Go ahead and try it out on your own! After this window closes, make two commits to complete the level."
             ]
           }
         }
@@ -85,7 +89,7 @@ exports.level = {
           "options": {
             "markdowns": [
             "## Git Commits",
-              "Ein Commit in ein Git-Repository speichert einen Abbildung aller Dateien in deinem Projektverzeichnis. Es ist wie ein riesiges Kopieren und Einfügen, nur besser.",
+              "Ein Commit in ein Git-Repository speichert eine Abbildung aller Dateien in deinem Projektverzeichnis. Es ist wie ein riesiges Kopieren und Einfügen, nur besser.",
               "",
               "Allerdings will Git die Commits so schlank wie möglich halten, also kopiert es nicht einfach stur das ganze Verzeichnis jedes Mal wenn du committest. Es kann (wenn möglich) Commits als Menge von Änderungen zusammenpacken, von einer Version des Repositorys zur nächsten.",
               "",
@@ -99,7 +103,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Mal sehen wie das in der Praxis ist. Rechts sehen wir ein (kleines) Git-Repository. Es gibt akutell zwei Commits -- den initialen, `C0`, und den danach, `C1`, der irgendwelche Änderungen enthält.",
+              "Mal sehen wie das in der Praxis ist. Rechts sehen wir ein (kleines) Git-Repository. Es gibt aktuell zwei Commits -- den initialen, `C0`, und den danach, `C1`, der irgendwelche Änderungen enthält.",
               "",
               "Klick die Schaltfläche unten um einen neuen Commit zu erzeugen:"
             ],
@@ -189,7 +193,7 @@ exports.level = {
             "beforeMarkdowns": [
               "Veamos cómo se ve esto en la práctica. A la derecha tenemos una visualización de un (pequeño) repositorio git. Hay dos commits ahora: el commit inicial, `C0`, y un commit que lo sigue, `C1`, que podría tener algunos cambios interesantes.",
               "",
-              "Dale al botón de abajo para hacer un nuevo commit"
+              "Dale al botón de abajo para hacer un nuevo commit."
             ],
             "afterMarkdowns": [
               "¡Ahí va! Increíble. Acabamos de hacer cambios al repositorio y los guardamos como un commit. El commit que acabamos de crear tiene un padre, `C1`, que referencia al commit en que se basó este."
@@ -231,7 +235,7 @@ exports.level = {
             "beforeMarkdowns": [
               "Veamos cómo se ve esto en la práctica. A la derecha tenemos una visualización de un (pequeño) repositorio git. Hay dos commits: el commit inicial, `C0`, y un commit que lo sigue, `C1`, que podría tener algunos cambios interesantes.",
               "",
-              "Dale al botón de abajo para crear un nuevo commit"
+              "Dale al botón de abajo para crear un nuevo commit."
             ],
             "afterMarkdowns": [
               "¡Allá va! Increíble. Acabamos de hacer cambios al repositorio y los guardamos como un commit. El commit que acabamos de crear tiene un padre, `C1`, que referencia al commit en el que se basó este."
@@ -273,7 +277,7 @@ exports.level = {
             "beforeMarkdowns": [
               "Vejamos o que isso significa na prática. À direita, temos uma visualização de um (pequeno) repositório git. Há dois commits no momento: o commit inicial, `C0`, e um commit que se segue, `C1`, que poderia conter algumas mudanças interessantes.",
               "",
-              "Clique no botão abaixo para fazer um novo commit"
+              "Clique no botão abaixo para fazer um novo commit."
             ],
             "afterMarkdowns": [
               "Aí vamos nós! Incrível. Acabamos de fazer mudanças no repositório e as guardamos como um commit. O commit que acabamos de criar tem um pai, `C1`, que referencia em qual commit ele se baseou."
@@ -315,7 +319,7 @@ exports.level = {
             "beforeMarkdowns": [
               "Vexamos o que iso significa na práctica. Á dereita, temos unha visualización dun (pequeno) repositorio de git. Hai dous commits por agora: o commit inicial, `C0`, e un commit que lle segue, `C1`, que podería ter algúns cambios interesantes.",
               "",
-              "Pincha no botón de abaixo para facer un novo commit"
+              "Pincha no botón de abaixo para facer un novo commit."
             ],
             "afterMarkdowns": [
               "¡Alá imos! Mi ma!. Fixemos cambios no repositorio e gardámolos nun commit. O commit que creaches ten un pai, `C1`, que é unha referencia do commit no que se basea."
@@ -361,7 +365,7 @@ exports.level = {
             "beforeMarkdowns": [
               "Voyons à quoi cela ressemble en pratique. Sur la droite, on peut visualiser un (petit) dépôt git. Il y a pour l'instant deux commits -- le premier commit initial, `C0`, et un commit suivant `C1` qui aurait des changements significatifs.",
               "",
-              "Appuyez sur le bouton ci-dessous pour faire un nouveau commit"
+              "Appuyez sur le bouton ci-dessous pour faire un nouveau commit."
             ],
             "afterMarkdowns": [
               "C'est parti ! Super. Nous venons de faire des modifications sur le dépôt et de sauvegarder celles-ci dans un commit. Ce commit que nous venons de faire a un parent, `C1`, qui référence le commit sur lequel il est basé."
@@ -587,6 +591,90 @@ exports.level = {
           "options": {
             "markdowns": [
               "Спробуй сам. Після того як це вікно закриється, зроби два коміти, щоб пройти цей рівень."
+            ]
+          }
+        }
+      ]
+    },
+    "vi": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git Commits",
+              "Một commit trong một git repository(kho chứa) lưu trữ một ảnh chụp của tất cả các file trong thư mục của bạn. Như kiểu copy và paste cõ bự, thậm chí còn tốt hơn thế!",
+              "",
+              "Thế nhưng Git muốn giữ cho các commit nhẹ hết mức có thể, cho nên git không copy tất cả thư mục một cách mù quáng mỗi khi bạn commit. Nó có thể(khi khả dĩ) nén commit như một tập hợp các thay đổi, hay là một \"bản so sánh\", giũa một phiên bản kho chứa git với phiên bản tiếp theo.",
+              "",
+              "Đồng thời Git cũng lưu trữ lịch sử commit nào được tạo ra lúc nào. Đó là tại sao hầu hết các commit có commit tổ tiên phía trên nó -- chúng tôi đã hình tượng hóa mối quan hệ này bằng các mũi tên. Trong cộng tác nhóm thì việc gìn giữ lịch sử là rất có ích!",
+              "",
+              "Có vẻ là hơi nhiều lý thuyết rồi, bây giờ bạn chỉ cần hiều các commit là các lát cắt của dự án. Các commit rất nhẹ nên việc chuyển qua lại giữa chúng thì nhanh vô cùng!"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Thử thực hành chút nào. Ở bên phải chúng ta có mô tả một kho git (nhỏ). Hiện tại đang có 2 commit, một là commit khởi nguyên `C0`, và một commit sau đó `C1` có thể đã có một vài thay đổi.",
+              "",
+              "Bấm nút bên dưới để tạo một commit mới"
+            ],
+            "afterMarkdowns": [
+              "Đúng rồi! Tuyệt vời. Bạn vừa tạo thay đổi cho kho chứa và lưu vào commit. Cái commit bạn vừa tạo nó có cha, là `C1` đấy, là commit mà nó được tạo ra từ đó."
+            ],
+            "command": "git commit",
+            "beforeCommand": ""
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Nào bây giờ thì thử tự làm bài tập nào! Sau khi đóng cửa sổ này, tạo ra 2 commit để hoàn thành cấp độ"
+            ]
+          }
+        }
+      ]
+    },
+    "sl_SI": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git Commits",
+              "Commit v git repozitoriju zabeleži stanje vseh datotek v tvoji mapi. Deluje kot tak velik 'Izreži in Prilepi', vendar še bolje!",
+              "",
+              "Git hoče commite ohraniti majhne kot se le da, tako da ne skopira vsakič kar vseh datotek ob commitu. Lahko (kadar je možno) stisne commit le kot množico sprememb oziroma kot \"delto\" sprememb med eno in drugo različico v repozitoriju.",
+              "",
+              "Git vodi tudi zgodovino o tem, kdaj je bil kateri commit narejen. Zato ima večina commitov nad seboj svoje prednike -- to je v vizualizaciji predstavljeno s puščicami. Vzdrževanje zgodovine je uporabno za vse, ki delajo na projektu!",
+              "",
+              "Veliko je za dojeti na začetku, ampak za zdaj si lahko predstavljaš commite kot posnetek projekta v določenem času. Commiti so zelo majhni in prehajanje med njimi je noro hitro!"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Poglejmo kako to izgleda v praksi. Na desni imamo vizualizacijo (majhnega) git repozitorija. Trenutno imamo dva commita -- prvi začetni commit, `C0`, in še en commit za tem, `C1`, ki ima lahko pomembne spremembe.",
+              "",
+              "Pritisni gumb spodaj, da narediš nov commit."
+            ],
+            "afterMarkdowns": [
+              "Tako ja! Super. Pravkar smo naredili spremembe v repozitoriju in jih shranili kot commit. Commit, ki smo ga naredili ima starša, `C1`, ki nam pove iz katerega commita smo izhajali."
+            ],
+            "command": "git commit",
+            "beforeCommand": ""
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Čas je, da poizkusiš sam! Ko se to okno zapre, naredi dva commita, da dokončaš to stopnjo."
             ]
           }
         }
